@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/rIvZQ_H3hfmexC8vurmLczLtMNBFtxCEdmb2NwkSPz2ZuJJ5nRPD0HbSJ7YTyFGdADQ">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="full">
+        <div class="slider-menu">
+            {% for y in value %}
+            <div class="page-1 page-menu">
+                <div class="level-image moneys">
+                    <h1 class="level-text">{{ y.level }}</h1>
+                    <img src="{% static 'files/images/menu-level.png' %}" alt="loading" width="140px">
+                </div>
+                <div class="money-image moneys">
+                    <h1 class="coin-text">{{ y.coin }}</h1>
+                    <img src="{% static 'files/images/menu-coin.png' %}" alt="loading" width="150px">
+                </div>
+                <div class="diamond-image moneys" style="margin-left: 30px;">
+                    <h1 class="diamond-text">{{ y.diamond }}</h1>
+                    <img src="{% static 'files/images/menu-diamond.png' %}" alt="loading" width="140px">
+                </div>
+            </div>
+            {% endfor %}
+            <div class="page-2 page-menu">
+
+            </div>
+            <div class="page-3 page-menu">
+
+            </div>
+            <div class="page-4 page-menu">
+
+            </div>
+            <div class="page-5 page-menu">
+
+            </div>
+
+        </div>
+        <div class="menu-arena">
+            <img src="{% static 'files/images/menu-arena.png' %}" alt="arena goblin" class="menu-arena-img">
+            <a href="{% url 'django:game' %}" class="battle-btn">
+                <div class="couche1">
+            
+                    <div class="couche2">
+            
+                        <div class="couche23">
+                    
+                            <div class="couche3">
+                        
+                                <div class="couche4">
+            
+                                    <span class="battle">Battle</span>
+                                    
+                                    <div class="couche5">
+                                    
+                                    </div>
+                        
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                    
+                    </div>
+                 
+                </div>
+            </a>
+        </div>
+        <div class="down-cards">
+          <!-- 1  -->  <div class="boxes"><img src="{% static 'files/images/card-1.png' %}" alt="loading" width="60px" height="65px"></div>
+          <!-- 2  -->  <div class="boxes"><img src="{% static 'files/images/card-2.png' %}" alt="loading" width="60px" height="65px"></div>
+          <!-- 3  -->  <div class="boxes set"><img src="{% static 'files/images/card-3.png' %}" alt="loading" width="60px" height="65px"></div>
+          <!-- 4  -->  <div class="boxes"><img src="{% static 'files/images/card-4.png' %}" alt="loading" width="60px" height="65px"></div>
+          <!-- 5  -->  <div class="boxes"><img src="{% static 'files/images/card-5.png' %}" alt="loading" width="60px" height="65px"></div>
+        </div>
+    </div>
+    
+
+    <!-- sound game -->
+    <div class="audios">
+        <audio id="start" class="startSound" src="{% static 'files/sounds/start-game-sound.mp3' %}"></audio>
+        <audio class="menuSound" src="{% static 'files/sounds/menu-sound.mp3' %}"></audio>
+    </div>
+    <!-- end sound -->
+
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>

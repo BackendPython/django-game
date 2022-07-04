@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/game.css' %}">
+    <title>Royale Battle</title>
+</head>
+
+<body>
+
+    <div class="full">
+        <div class="red-team">
+            <div class="towers">
+                <!-- king red -->
+                <div class="king-red tower">
+                    <div class="health health-red2">
+                        1200
+                    </div>
+                    <img src="{% static 'files/images/kingtower.png' %}">
+                </div>
+                <!-- princess red -->
+                <div class="princess-red tower">
+                    <div class="health health-red1">
+                        600
+                    </div>
+                    <img src="{% static 'files/images/Princesstower-red.png' %}">
+                </div>
+                <div class="princess-red2 tower">
+                    <div class="health health-red3">
+                        600
+                    </div>
+                    <img src="{% static 'files/images/Princesstower-red.png' %}">
+                </div>
+            </div>
+        </div>
+        <div class="blue-team">
+            <div class="towers towers2">
+                <div class="king-blue tower">
+                    <div class="health health-blue2">
+                        1200
+                    </div>
+                    <img src="{% static 'files/images/myKingtower.png' %}">
+                </div>
+                <div class="princess-blue tower">
+                    <div class="health health-blue1">
+                        600
+                    </div>
+                    <img src="{% static 'files/images/Princesstower-blue.png' %}">
+                </div>
+                <div class="princess-blue2 tower">
+                    <div class="health health-blue3">
+                        600
+                    </div>
+                <img src="{% static 'files/images/Princesstower-blue.png' %}">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="audios">
+        <audio src="{% static 'files/sounds/battle-sound.mp3' %}"></audio>
+    </div>
+    <script src="{% static 'js/game.js' %}"></script>
+</body>
+
+</html>

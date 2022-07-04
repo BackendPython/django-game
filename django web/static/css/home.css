@@ -1,0 +1,447 @@
+@import 'https://fonts.googleapis.com/css?family=Bungee';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.full{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/static/files/images/start-game-text.jpeg");
+}
+
+.full .down-cards{
+    width: 49vh;
+    bottom: 0px;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.full .down-cards .boxes{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.full .down-cards .set{
+    padding: 0px 80px;
+    background-color: orange;
+}
+
+.full .slider-menu{
+    top: 0px;
+    display: none;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.full .slider-menu .page-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* moneys */
+.moneys{
+    border-radius: 5%;
+}
+
+.couche1{
+	position: relative;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
+	width:300px;
+	height:100px;
+	background:black;
+	-webkit-box-shadow: 0px 11px 2px #301C09;
+    -moz-box-shadow: 0px 11px 2px #301C09;
+    box-shadow: 0px 11px 2px #301C09;
+    cursor:pointer;
+    margin : 80px auto;
+
+    
+}
+
+.couche2{
+	position:absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:294px;
+	height:94px;
+	margin-top:3px;
+	margin-left:3px;
+	background:#FDA80D;
+	-webkit-box-shadow: 0px 9px 0px #AF6B06;
+    -moz-box-shadow: 0px 9px 0px #AF6B06;
+    box-shadow: 0px 9px 0px #AF6B06;
+
+}
+
+.couche23{
+	position:absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:292px;
+	height:80px;
+	margin-top:5px;
+	margin-left:1px;
+    -webkit-box-shadow: 0px -4px 5px 0px #FFDC33;
+    -moz-box-shadow:    0px -4px 5px 0px #FFDC33;
+	box-shadow:         0px -4px 5px 0px #FFDC33;
+
+
+}
+
+.couche3{
+	position:absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top:0px;
+	margin-left:5px;
+	width:281px;
+	height:82px;
+	background:rgba(255,187,42,1);
+	-webkit-box-shadow: 0px 4px 3px 0px #FE8906;
+	-moz-box-shadow:    0px 4px 3px 0px #FE8906;
+	box-shadow:         0px 4px 3px 0px #FE8906;
+
+}
+
+.couche4{
+	position:absolute;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top:5px;
+	margin-left:3px;
+	width:275px;
+	height:38px;
+	background:#FFD053;
+	
+}
+
+.couche5{
+	position:absolute;
+	-webkit-border-radius: 45%;
+	-moz-border-radius: 45%;
+	border-radius: 45%;
+	margin-top:0px;
+	margin-left:267px;
+	width:7px;
+	height:9px;
+	background:#FFF1B6;
+
+}
+
+.battle{
+	position:absolute;
+	font-family: "bungee",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+	color:#FFFFCC;
+	font-size:1.7em;
+	margin-top:2px; 
+	margin-left:85px;
+	text-shadow: -1px 0 1px #582E00, 
+             	1px 0 1px #582E00,
+             	0 -1px 1px #582E00,
+             	0 4px 1px #582E00,
+             	-2px 4px 1px #582E00,
+             	2px 3px 2px #582E00;
+}
+
+/*effects*/
+.couche1:active{
+	width:280px;
+	height:95px;
+}
+
+.couche1:active .couche2{
+	width:274px;
+	height:89px;
+}
+
+.couche1:active .couche23{
+	width:272px;
+	height:75px;
+}
+
+.couche1:active .couche3{
+	width:261px;
+	height:77px;
+}
+
+.couche1:active .couche4{
+	width:255px;
+	height:32px;
+}
+
+.couche1:active .couche5{
+	width:6px;
+	height:8px;
+	margin-left:248px;
+}
+
+.couche1:active .battle{
+	margin-top:-3px; 
+	margin-left:75px;
+}
+
+/* level */
+.full .level-image{
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: space-around;
+}
+.full .level-image h1{
+    left: 11%;
+    font-size: 30px;
+    position: absolute;
+}
+/* money */
+.full .money-image{
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.full .money-image h1{
+    left: 30%;
+    position: absolute;
+}
+
+/* money */
+.full .diamond-image{
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+.full .diamond-image h1{
+    left: 35%;
+    position: absolute;
+}
+
+.full .menu-arena{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media and animations */
+.fullScreen{
+    background-size: 700px;
+    animation: fullScreen 7s;
+    background-position: center;
+}
+
+@keyframes fullScreen {
+    0%{
+        background-size: 700px;
+        background-position: center;
+        background-image: url("/static/files/images/start-game-text.jpeg");
+    }
+    39%{
+        background-position: center;
+    }
+    40%{
+        background-size: 700px;
+        background-position: bottom;
+        background-image: url("/static/files/images/start-game-text.jpeg");
+    }
+    60%{
+        background-size: 700px;
+        background-position: bottom;
+        background-image: url("/static/files/images/start-game-text2.jpg");
+    }
+    100%{
+        background-size: 700px;
+        background-position: bottom;
+        background-image: url("/static/files/images/start-game-text3.jpg");
+    }
+}
+/* 
+@media screen and (max-width: 1400px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 69vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 475px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 67vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 470px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 65vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 455px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 64vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 63vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 61vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 59vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .full{
+        width: 70vh;
+        background-position: bottom top bottom;
+    }
+    .full .down-cards{
+        width: 56vh;
+        bottom: 0px;
+        display: none;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+    }
+} */

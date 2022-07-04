@@ -1,0 +1,72 @@
+@import 'https://fonts.googleapis.com/css?family=Bungee';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.full{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: rgb(138, 128, 128);
+}
+.king-red{
+    top: 5%;
+    left: 43%;
+}
+.princess-red{
+    top: 20%;
+    left: 10%;
+}
+.princess-red2{
+    top: 20%;
+    left: 80%;
+}
+.king-blue{
+    bottom: 20%;
+    left: 44%;
+    position: absolute;
+}
+.princess-blue{
+    left: 10%;
+    bottom: 35%;
+}
+.princess-blue2{
+    left: 80%;
+    bottom: 35%;
+    position: absolute;
+}
+.tower{
+    width: 40%;
+    position: absolute;
+}
+.tower img{
+    width: 35%;
+    height: 30%;
+}
+.health{
+    width: 35%;
+    height: 22%;
+    display: flex;
+    color: white;
+    font-size: 22px;
+    margin-top: -15%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
